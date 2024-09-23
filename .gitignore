@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+.ipynb_checkpoints/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+inference/
+inference_results/
+output/
+train_data/
+*.DS_Store
+*.vs
+*.user
+*~
+*.vscode
+*.idea
+.venv
+
+#tmp file
+tmp/
+
+#log file
+log/
+
+#env file
+.env
+
+#ssl key
+ssl/
