@@ -46,10 +46,18 @@
 1. 大语言模型的能力较弱。可以在.env文件中配置CHAT_MODEL为gpt-4o或者能力更强的模型
 2. 由于大语言模型生成时具有一定的随机性，小概率会生成不符合的outline，可以重新生成outline再看看格式是否正常
 
+### 图片来源
+1. **openai：** 由openai的dall-e-3(默认)模型根据关键词生成图片，需要配置.env文件的OPENAI_API_KEY
+2. **sdxl：** 由本地的RealVisXL_V3.0_Turbo模型根据关键词生成图片，需本地机器配置了GPU(3090及以上)
+3. **flux：** 由本地的FLUX.1-schnell模型根据关键词生成图片，需本地机器配置了GPU(3090及以上)，效果比RealVisXL_V3.0_Turbo更好，但速度更慢
+4. **pexels：** 从图片网站pexels根据关键词检索图片，需要配置.env文件的PEXELS_API_KEY
+
+由于总所周知的原因，请保证连接国外网站通畅
+
 ### 项目的不足
 
 1. 目前只有blue-line和purple-modern两种ppt母版
-2. 每种母版只支持TITLE_ONLY、TITLE_WITH_PICTURE、TITLE_AND_CONTENT、CONTENT_WITH_PICTURE、TWO_CONTENTS、TWO_CONTENTS_WITH_PICTURE、THREE_CONTENTS、THREE_CONTENTS_WITH_PICTURE有限的几种布局形式
+2. 每种母版只支持TITLE_ONLY、TITLE_WITH_PICTURE、TITLE_AND_CONTENT、CONTENT_WITH_PICTURE、TWO_CONTENTS、TWO_CONTENTS_WITH_PICTURE、THREE_CONTENTS、THREE_CONTENTS_WITH_PICTURE等有限的几种布局形式
 
 是的，我们缺少专业的ppt母版制作人员，如果你擅长PPT母版制作且对本项目感兴趣，希望你能加入我们，我们会将突出贡献者列为本项目的主要作者
 
